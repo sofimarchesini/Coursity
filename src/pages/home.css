@@ -1,0 +1,19 @@
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background-position: var(--main-position);
+    background-color: #ffffff;
+  }
+
+.home-text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: none;
+    justify-content: flex-start;
+    padding-top: 140px;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-left: 90px;
+    color: #000;
+}
