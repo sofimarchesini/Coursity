@@ -48,7 +48,7 @@ function addCart(producto){
 function addAndShowCart(item) {
     const prod = cart.find(prod => prod.id === item.id);
 
-    if (!prod) {
+    /**if (!prod) {
         cart.push({
             id: item.id,
             name: item.name,
@@ -65,7 +65,7 @@ function addAndShowCart(item) {
     if(cart.length==1) {showCart()};
     $(`#${item.id}-up`).on("click",()=> {prodIncr(item)});
     $(`#${item.id}-down`).on("click",()=>{prodDecr(item)});
-    $(`#${item.id}-remove`).on("click",()=>{removeProd(item)});
+    $(`#${item.id}-remove`).on("click",()=>{removeProd(item)});**/
     saveOnStorage();
 
 }

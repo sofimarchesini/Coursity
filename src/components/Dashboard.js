@@ -40,7 +40,7 @@ function Dashboard(props){
               return (
                 <CardItem
               src={image}
-              title={name} onAdd={props.addCard}
+              title={name} 
               price={price} id={id}/>
               )
             }

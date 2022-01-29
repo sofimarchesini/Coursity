@@ -6,12 +6,14 @@ import Cart from './components/Cart/Cart.js';
 import Footer from './pages/footer.js';
 
 function App() {
+
+  
   return (
     <div className="App">
       <NavBar/>
       <Cart/>
       <Home/>
-      <Dashboard/>
+      <Dashboard />
       <Footer/>
     </div>
   );

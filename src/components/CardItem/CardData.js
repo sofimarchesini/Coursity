@@ -2,43 +2,46 @@
 
 
 const items = [
-{
-    name:"Machine Learning",
-    price: 12,
-    id : 1,
-    image:process.env.PUBLIC_URL + 'img/1.jfif'
-    
-},
+
 {   
     id:4,
     name:"Financial Markets",
     price:9,
-    image:process.env.PUBLIC_URL + "img/7.jfif"
-    
+    image:process.env.PUBLIC_URL + "img/7.jfif",
+    description: 'In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these tasks, Professor Laurie Santos reveals misconceptions about happiness, annoying features of the mind that lead us to think the way we do, and the research that can help us change. You will ultimately be prepared to successfully incorporate a specific wellness activity into your life.'
+
 },
 {
     id: 5,
     name: "Introduction to Psichology",
     price:9,
-    image: process.env.PUBLIC_URL + "img/4.jfif"
+    image: process.env.PUBLIC_URL + "img/4.jfif",
+    description: 'In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these tasks, Professor Laurie Santos reveals misconceptions about happiness, annoying features of the mind that lead us to think the way we do, and the research that can help us change. You will ultimately be prepared to successfully incorporate a specific wellness activity into your life.'
+
 },
 {
     id: 6,
     name: "The 5 secrets of Science",
     price: 10,
-    image:process.env.PUBLIC_URL + "img/5.jfif"
+    image:process.env.PUBLIC_URL + "img/5.jfif",
+    description: 'In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these tasks, Professor Laurie Santos reveals misconceptions about happiness, annoying features of the mind that lead us to think the way we do, and the research that can help us change. You will ultimately be prepared to successfully incorporate a specific wellness activity into your life.'
+
 },
 {
     id: 7,
     name: "Getting Started with Python",
     price:11,
-    image: process.env.PUBLIC_URL + `img/2.jfif`
+    image: process.env.PUBLIC_URL + `img/2.jfif`,
+    description: 'In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these tasks, Professor Laurie Santos reveals misconceptions about happiness, annoying features of the mind that lead us to think the way we do, and the research that can help us change. You will ultimately be prepared to successfully incorporate a specific wellness activity into your life.'
+
 },
 {
     id: 8,
     name: "EF Core",
     price:12,
-    image:process.env.PUBLIC_URL + 'img/7.png'
+    image:process.env.PUBLIC_URL + 'img/7.png',
+    description: 'In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these tasks, Professor Laurie Santos reveals misconceptions about happiness, annoying features of the mind that lead us to think the way we do, and the research that can help us change. You will ultimately be prepared to successfully incorporate a specific wellness activity into your life.'
+
 }
 
 ]

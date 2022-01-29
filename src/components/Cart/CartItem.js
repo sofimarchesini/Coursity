@@ -10,6 +10,7 @@ function CartItem(props){
             <span className="remove-item" id="${item.id}-remove">
                 <i className="far fa-trash-alt"></i>
             </span>
+            <div>{props.description}</div>
             </div>
             <div>
                 <i className="fas fa-chevron-up cart-up" id="${item.id}-up"></i>
