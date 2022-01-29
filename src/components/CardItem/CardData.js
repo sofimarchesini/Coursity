@@ -9,20 +9,6 @@ const items = [
     image:process.env.PUBLIC_URL + 'img/1.jfif'
     
 },
-{
-    id: 2,
-    name:"Indigenous Canada",
-    price: 10,
-    image:process.env.PUBLIC_URL +"img/6.jfif"
-
-},
-{
-    id: 3,
-    name: "Java Getting Started",
-    price:12,
-    image: process.env.PUBLIC_URL + "img/3.jfif"
-    
-},
 {   
     id:4,
     name:"Financial Markets",

@@ -4,7 +4,7 @@ import './CardItem/CardItem.css';
 import CardItem from './CardItem/CardItem.js';
 import items from './CardItem/CardData.js';
 
-function Dashboard(){
+function Dashboard(props){
 
   const [items2,setItems] = useState([]);
 
@@ -40,7 +40,7 @@ function Dashboard(){
               return (
                 <CardItem
               src={image}
-              title={name}
+              title={name} onAdd={props.addCard}
               price={price} id={id}/>
               )
             }

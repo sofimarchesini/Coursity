@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './components/Dashboard.js';
 import Home from './pages/home.js';
 import Cart from './components/Cart/Cart.js';
-import Counter from './components/counter.js'
+import Footer from './pages/footer.js';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <NavBar/>
       <Cart/>
       <Home/>
-      <Counter/>
       <Dashboard/>
+      <Footer/>
     </div>
   );
 }
