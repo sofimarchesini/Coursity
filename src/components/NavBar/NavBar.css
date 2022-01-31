@@ -5,10 +5,13 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 9vh;
-    background-color: #f3f3f3;
+    background-color: #fbfbfb;
     position: fixed;
     width: 100%;
     z-index: 998;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    text-decoration: none;
+
   }
   header .header-title-link {
     display: flex;
@@ -22,10 +25,11 @@ header {
     margin-top: 10px;
 
   }
-  header .header-title-link h1 {
+  header .header-title-link  {
     margin-top: 6px;
-    font-size: 36px;
+    font-size: 30px;
     color: #3d3d3d;
+    text-decoration: none;
   }
   header .icon-header {
     display: flex;

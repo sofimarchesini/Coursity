@@ -1,22 +1,35 @@
 import NavBar from './components/NavBar/NavBar.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Dashboard from './components/Dashboard.js';
-import Home from './pages/home.js';
+import HomePage from './pages/HomePage/HomePage';
 import Cart from './components/Cart/Cart.js';
-import Footer from './pages/footer.js';
+import Footer from './components/footer/footer.js';
+import CustomProvider from './components/context/cartContext.js';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Contact from './pages/contactPage/contact.js';
+import About from './pages/aboutPage/about.js';
+import ItemDetailContainer from './components/Container/ItemDetailContainer.js';
+import ItemListContainer from './components/Container/itemListContainer.js';
+
+
 
 function App() {
-
-  
   return (
-    <div className="App">
-      <NavBar/>
-      <Cart/>
-      <Home/>
-      <Dashboard />
-      <Footer/>
-    </div>
-  );
+    <BrowserRouter>
+      <CustomProvider>
+          <NavBar/>
+          <Routes path="/">
+            <Route index element={<HomePage/>}/>
+              <Route path="/category/:category" element={<ItemListContainer/>}/>
+              <Route path=':id' element={<ItemDetailContainer/>}/>
+              <Route path="about"  element={<About/>}/>
+              <Route path="contact"  element={<Contact/>}/>
+              <Route path="/cart" element={<Cart/>}/>
+          </Routes>
+          <Footer/>
+
+      </CustomProvider> 
+    </BrowserRouter>
+     );
 }
 
 export default App;
