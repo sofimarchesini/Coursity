@@ -12,7 +12,8 @@ const CustomProvider = ({ children }) => {
                 ...item,quantity: item.quantity + producto.quantity
             } : item))
 
-        } else setCart([...cart, producto])
+        } else {
+            setCart([...cart, producto])}
     }
 
     const removeFromCart = (prod) => {
@@ -36,6 +37,7 @@ const CustomProvider = ({ children }) => {
         cart.map(item => {
              tempTotal += parseInt(item.price*item.quantity);
         });
+        console.log(tempTotal);
         return  tempTotal;
     }
 

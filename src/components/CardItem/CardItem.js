@@ -13,18 +13,21 @@ const CardItem = (props) =>{
     const navigate = useNavigate();
 
     return (
-        <div className="card-item"> 
-            <div id={props.id}>
-                <div className='row'>
+        <div className="card-item container" onClick={() => navigate(`/${props.id}`)}> 
+            <div id={props.id} className='card-item-sun'>
+                <div className='row-1'>
                     <img className="woman-img" src={process.env.PUBLIC_URL+props.src} alt=""/>
                 </div>
-                <div className='row'>
-                    <p><strong className="name">{props.title}</strong><br />
-                    <strong><span className="price">{props.price}</span></strong></p>
+                <div className='row-2'>
+                    <p className="name">{props.title}<br /></p>
+                    <p className="name-2">The University of Cambridge<br /></p>
                 </div>
-                <div className='row'>
-                    <button  onClick={() => navigate(`/${props.id}`)} className= "mt-4 button-add" id={props.id}><p className="carrito-title">Buy now</p></button><br/>
+
+                <div className='row-3'>
                  </div>
+                 <div className=' row-4 '>
+                     <p className="course-text">Course</p>
+                </div>
             </div>
         </div>
     );

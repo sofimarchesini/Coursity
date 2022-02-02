@@ -25,16 +25,18 @@ const ItemListContainer = ()=>{
   const getProductsWithAsyncAwait = async () => {
      try {
         const result = await getProducts();
-        console.log(result);
      } catch (error) {
           console.error("Ha habido un error:", error);
       }
     };
-  
+
   getProductsWithAsyncAwait();
 
+  if (category){
+     items = items.filter(item=>item.category === category)
+  }
 
-
+  console.log(items);
   return(
       <div id="woman-initial-section" className="woman-section">
         <h3 className="section-text">Get ready to learn</h3>

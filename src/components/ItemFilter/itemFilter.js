@@ -6,13 +6,13 @@ import Dropdown from 'react-bootstrap/Dropdown'
 const ItemFilter = ()=>{
 
     return (
-        <Dropdown className="itemFilter text-center">
-            <Dropdown.Toggle className="filter-button">Filter</Dropdown.Toggle>
+        <Dropdown className=" text-center">
+            <Dropdown.Toggle className="filter-buttonn">Filter</Dropdown.Toggle>
             <Dropdown.Menu>
-                <li><Link to= '/category/finance'>finance</Link></li>
-                <li><Link to= '/category/science'>science</Link></li>
-                <li><Link to= '/category/programming'>programming</Link></li>
-                <li><Link to= '/category/psichology'>psichology</Link></li>
+                <li className='filter-item'><Link to= '/category/finance'  style={{ textDecoration: 'none' ,color: 'black'}}>finance</Link></li>
+                <li className='filter-item'><Link to= '/category/science' style={{ textDecoration: 'none',color: 'black' }}>science</Link></li>
+                <li className='filter-item'><Link to= '/category/programming' style={{ textDecoration: 'none',color: 'black' }}>programming</Link></li>
+                <li className='filter-item'><Link to= '/category/psichology' style={{ textDecoration: 'none',color: 'black' }}>psichology</Link></li>
             </Dropdown.Menu>
         </Dropdown>
 

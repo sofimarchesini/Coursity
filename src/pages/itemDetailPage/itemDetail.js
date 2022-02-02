@@ -10,37 +10,56 @@ import {Link} from 'react-router-dom';
 
 const ItemDetail = (props) =>{
     
-    const { addToCart,freshTotal,subTotal} = useContext(context)
+    const { addToCart,freshTotal,prodIncr,prodDecr,cart} = useContext(context)
 
     const onAdd = (counter) => {
         props.prod.quantity = counter
         addToCart(props.prod)
-        
+    }
+
+    const onDec = (counter) => {
+        props.prod.quantity = counter
+        addToCart(props.prod)
     }
 
     return(
-        <div className="container-fluid detail-item"> 
-            <div className='row fila-inicial'></div>
-            <div className='row'>
-                <div className='img-cont col-7 '><img className="img-detail" src={props.prod.image} alt="product" /></div>
-                <div className="info-item-detail col-4">
-                    <h4 className="name-item">{props.prod.name}</h4>
-                    <h5 className="price-item">{props.prod.price}</h5>
-                    <span className="remove-item" id="${item.id}-remove">
-                        <i className="far fa-trash-alt"></i>
-                    </span>
+        <div >
+            <div class="container-fluid section">
+                <div class="row row-principal">
+                    <div className='col-1'></div>
+                    <div className="info-item-detail col-7">
+                            <h4 className="name-item">{props.prod.name}</h4>
+                            <h5 className="price-item">{props.prod.price}</h5>
+                                <p>Aprende a programar con clases y objetos, a usar ficheros y bases de datos SQLite, interfaces gráficas y más con Python!</p>
+                    </div>
                 </div>
-                <div><h3>your total : $<span className="total-detail">{freshTotal()}</span></h3></div>
+                <div className='row'>
+                    <div className='col-7 sub-cont'>
+                        <div className=' description'>
+                            <strong><p className='detail-text-title'> Description</p></strong>
+                            <p className='detail-text'>{props.prod.description}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className='row'>           
-                <p className='detail-text'>{props.prod.description}</p>
+            <div className='container-right'>
+                <div className='sub-container-1 row'>
+                    <img className="img-detail" src={props.prod.image} alt="product" />
+                </div>
+                <div className='sub-container-2 row  ' > 
+                    <Counter prod={props.prod} onAdd={onAdd} onDec={onDec}/>
+                </div>
+                <div className='row'>
+                    <div className='button-cont-comp'>
+                        <Link to="/">
+                            <Button className='butt'>Continuar comprando</Button>
+                        </Link>
+                    </div>
+                </div>
             </div>
-            <Counter prod={props.prod} onAdd={onAdd}/>
-            <Link to="/">
-                <Button >Continuar comprando</Button>
-            </Link>
-
+    
         </div>
+            
     );
     
 }

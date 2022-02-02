@@ -7,17 +7,27 @@
     border-bottom: 1px solid rgb(245, 244, 244);
   }
 
-.home-text{
+.home-text,.text-principal{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: none;
     justify-content: flex-start;
-    padding-top: 190px;
-    font-size: 70px;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    margin-left: 90px;
-    color: #000;
+    margin-left: 80px;
+}
+
+.home-text{
+  font-size: 30px;
+  color: rgb(80, 79, 79);
+  margin-top: 50px;
+}
+
+.text-principal{
+  font-size: 65px;
+  color: rgb(20, 20, 20);
+  padding-top: 190px;
+
 }
 
 .img-home-cont{
@@ -25,7 +35,8 @@
 }
 .img-home{
   width: 130%;
-  margin-top: 260px;
+  margin-top: 220px;
   border-radius: 80%;
 
   }
+

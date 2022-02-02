@@ -9,7 +9,7 @@ function Footer(){
       <div class="row py-4">
         <div class="col-lg-3 brand-description">
           <a class="footer-title-link" href="#"><h1>Coursity</h1></a>
-          <p class="text-description">The best Fashion Brand for women, men and Kids: runway looks, bags, accessories, jewelery and much more</p>
+          <p class="text-description">The best Page to learn more about what you like</p>
           <ul class="footer-icons">
             <a href="https://www.instagram.com/fendi/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://twitter.com/fendi?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -21,7 +21,7 @@ function Footer(){
         <div class="brand-info d-none d-md-block col-4">
           <nav>
             <ul class="info-footer">
-              <li><p class="title-nav"><strong>About Fendi</strong> </p></li>
+              <li><p class="title-nav"><strong>About Coursity</strong> </p></li>
               <li><a class= "footer-text-info" href=" https://www.vogue.com/fashion-shows/designer/fendi" target="_blank">More News</a></li>
               <li><a class= "footer-text-info" href="#contact-section">Contact Us</a></li>
               <li><a class= "footer-text-info" href="https://www.fendiprivatesuites.com/en" target="_blank">Private Suits</a></li>

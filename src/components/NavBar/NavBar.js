@@ -11,8 +11,8 @@ const NavBar = () => {
         <header>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-2 ">
-                <Link to= '/'>
+              <div className="col-2 header-title ">
+                <Link to= '/'  style={{ textDecoration: 'none' ,color: 'black'}}>
                     <h1 className='header-title-link'>Coursity</h1>
                 </Link>
                 </div>

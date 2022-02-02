@@ -1,6 +1,6 @@
 .woman-section {
     text-align: center;
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
   }
   @media only screen and (max-width: 768px) {
@@ -36,7 +36,7 @@
   }
   .woman-section .grid-container-woman > * {
     height: 100%;
-    padding: 40px;
+    padding: 30px;
     background-color: white;
     
   }
@@ -44,9 +44,9 @@
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 50px 30px;
+    grid-gap: 50px 40px;
     margin: 50px 0;
-    padding: 0 190px;
+    padding: 0 200px;
   }
   @media only screen and (max-width: 945px) {
     .woman-section .grid-container-woman {
@@ -63,21 +63,27 @@
       padding-left: 12%;
     }
   }
-  .woman-section .grid-container-woman p {
-    padding-top: 20px;
+   .name,.name-2 {
     font-size: 14px;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 5px
   }
+
+  .name{
+    margin-top: 10px;
+  }
+
   .woman-section .grid-container-woman .woman-text {
     margin-top: 300px;
     padding: 50px;
   }
   .woman-section .grid-container-woman .woman-img {
-    width: 80%;
+    width: 96%;
     height: auto;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
   }
 
   .woman-section .grid-container-woman .button {
@@ -118,17 +124,33 @@
   }
 
 .card-item{
-    border: 0.5px solid rgb(172, 168, 168);
     border-radius: 1%;
     transition: transform 0.35s ease-in-out;
+    cursor:pointer;
+    box-shadow:  -10px -10px 8px -6px rgb(219, 219, 219),
+    10px 10px 8px -6px rgb(219, 219, 219),
+    -10px 10px 8px -6px rgb(219, 219, 219),
+    10px -10px 8px -6px rgb(219, 219, 219);
 }
 
-.button-add{
-  background-color: rgb(236, 233, 233);
+.name{
   font-size: 20px;
-  border: none;
-  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+
+  color: rgb(59, 59, 59);
 }
+
+.name-2{
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  color: rgb(109, 108, 108);
+}
+
+
 
 .card-item:hover {
   -webkit-transform: scale(1.01);
@@ -139,3 +161,29 @@
   10px -10px 8px -6px rgb(212, 212, 212);
 
 }
+
+.course-text{
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(243, 182, 90);
+}
+
+.row-1{
+  height:130px;
+  width: 100%;
+}
+
+.row-2{
+  height: 70px;
+
+}
+
+.row-3{
+  height: 100px;
+
+}
+
+.row-4{
+  height: 50px;
+}
+
