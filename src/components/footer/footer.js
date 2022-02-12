@@ -8,7 +8,7 @@ function Footer(){
     <div class="container-fluid">
       <div class="row py-4">
         <div class="col-lg-3 brand-description">
-          <a class="footer-title-link" href="#"><h1>Coursity</h1></a>
+          <a class="footer-title-link" href="#"><h1>Online Finance Learning Academy</h1></a>
           <p class="text-description">The best Page to learn more about what you like</p>
           <ul class="footer-icons">
             <a href="https://www.instagram.com/fendi/" target="_blank"><i class="fab fa-instagram"></i></a>

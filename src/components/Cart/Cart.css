@@ -58,8 +58,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: none;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     margin-top: 5px;
+    border: 1px solid grey;
   }
   
   .info-item {

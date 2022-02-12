@@ -1,0 +1,17 @@
+.row-1{
+    height: 120px;
+}
+
+.containerr{
+    height: 100vh;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+    background: #fffdf8;
+}
+
+h5{
+    text-align: center;
+}

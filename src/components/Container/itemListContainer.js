@@ -5,9 +5,13 @@ import CardItem from '../CardItem/CardItem.js';
 import items from '../CardItem/CardData.js';
 import ItemFilter from '../ItemFilter/itemFilter.js';
 import { useParams } from "react-router";
+//import {getFirestore} from "../firebase";
 
 
 const ItemListContainer = ()=>{
+
+  //const db = getFirestore();
+  //const productsCollection = db.collection('items');
 
   const [items2,setItems] = useState([]);
   const {category} = useParams();

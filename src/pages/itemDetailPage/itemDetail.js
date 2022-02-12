@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { context } from '../../components/context/cartContext';
 import './itemDetail.css';
-import Counter from '../../components/counter/counter.js';
+import Counter from '../../components/counter/counterDetail.js';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
 
@@ -17,11 +17,6 @@ const ItemDetail = (props) =>{
         addToCart(props.prod)
     }
 
-    const onDec = (counter) => {
-        props.prod.quantity = counter
-        addToCart(props.prod)
-    }
-
     return(
         <div >
             <div class="container-fluid section">
@@ -29,7 +24,7 @@ const ItemDetail = (props) =>{
                     <div className='col-1'></div>
                     <div className="info-item-detail col-7">
                             <h4 className="name-item">{props.prod.name}</h4>
-                            <h5 className="price-item">{props.prod.price}</h5>
+                            <h5 className="price-item">${props.prod.price}</h5>
                                 <p>Aprende a programar con clases y objetos, a usar ficheros y bases de datos SQLite, interfaces gráficas y más con Python!</p>
                     </div>
                 </div>
@@ -47,7 +42,7 @@ const ItemDetail = (props) =>{
                     <img className="img-detail" src={props.prod.image} alt="product" />
                 </div>
                 <div className='sub-container-2 row  ' > 
-                    <Counter prod={props.prod} onAdd={onAdd} onDec={onDec}/>
+                    <Counter prod={props.prod} onAdd={onAdd} />
                 </div>
                 <div className='row'>
                     <div className='button-cont-comp'>

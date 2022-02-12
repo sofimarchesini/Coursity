@@ -20,10 +20,11 @@ const CardItem = (props) =>{
                 </div>
                 <div className='row-2'>
                     <p className="name">{props.title}<br /></p>
-                    <p className="name-2">The University of Cambridge<br /></p>
+                    <p className="name-2">Online Finance Learning Academy<br /></p>
                 </div>
-
                 <div className='row-3'>
+                <p className="price">${props.price}</p>
+
                  </div>
                  <div className=' row-4 '>
                      <p className="course-text">Course</p>
