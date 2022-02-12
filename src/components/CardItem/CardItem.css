@@ -164,7 +164,7 @@
 .course-text{
   display: flex;
   justify-content: flex-start;
-  color: rgb(243, 182, 90);
+  color: rgb(61, 99, 202);
 }
 
 .row-1{
@@ -189,4 +189,5 @@
 .price{
   display: flex;
   justify-content: flex-start;
+  margin-left: 5px;
 }

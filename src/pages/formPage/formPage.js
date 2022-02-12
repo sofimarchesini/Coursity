@@ -9,8 +9,9 @@ import Formulario from '../../components/Form/Form.js'
 const Compra = () =>{
     return (
         <div className=' containerr'>
+
             <div className='row-1'></div>
-            <h5>Complete the form to get your course!</h5>
+            <h5>Once you payed you be able to complete the form to get your course!</h5>
             <Formulario/>
         </div>
     )

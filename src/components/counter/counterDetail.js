@@ -37,7 +37,7 @@ const  Counter = (props) => {
           +
         </button>
       </div>
-      <div className="mt-3"><Link to= '/cart'><button  onClick={() => {props.onAdd(counter,props.prod)}} className= " button-add row" ><p className="carrito-title">Add to Cart</p></button><br/></Link></div>
+      <div className="mt-3"><Link to= '/cart' style={{ textDecoration: 'none' }}><button  onClick={() => {props.onAdd(counter,props.prod)}} className= " button-add row" ><p className="carrito-title">Add to Cart</p></button><br/></Link></div>
 
     </div>
     

@@ -39,7 +39,7 @@ const Cart = () =>{
                                 id={prod.id}
                                 quantity={prod.quantity}/>
                                 <div onClick={()=>removeFromCart(prod)}>
-                                    <Button  className="material-icons btn-sm bg-gradient">remove</Button>
+                                    <Button  className="remove-button">remove</Button>
                                 </div>
                             
                         </div>
@@ -51,12 +51,14 @@ const Cart = () =>{
                         <h3>your total : $<span className="cart-total">{freshTotal()}</span></h3>
                         <button onClick={() => clearCart()} className="clear-cart banner-btn">clear cart</button>
                     </div>
-                    <NavLink to="/" className="close-cart">
+                    <NavLink to="/" className="close-cart" style={{ textDecoration: 'none',color: 'black'}}>
                         <i className="icon-close" ><FontAwesomeIcon icon="fa-solid fa-rectangle-xmark"/>Go back</i>
                     </NavLink>
-                    <Link to='/cart/pago'>
-                        <i>Terminar Compra</i>
-                    </Link>
+                    <div className='button-pay-cont'>
+                        <Link to='/cart/pago' style={{ textDecoration: 'none',color: 'black'}}>
+                            <i className='button-pay'>Pay here</i>
+                        </Link>
+                    </div>
                 </div>
         </div>
         </>:

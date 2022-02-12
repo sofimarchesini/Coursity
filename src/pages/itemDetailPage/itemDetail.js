@@ -25,7 +25,6 @@ const ItemDetail = (props) =>{
                     <div className="info-item-detail col-7">
                             <h4 className="name-item">{props.prod.name}</h4>
                             <h5 className="price-item">${props.prod.price}</h5>
-                                <p>Aprende a programar con clases y objetos, a usar ficheros y bases de datos SQLite, interfaces gráficas y más con Python!</p>
                     </div>
                 </div>
                 <div className='row'>
@@ -46,8 +45,8 @@ const ItemDetail = (props) =>{
                 </div>
                 <div className='row'>
                     <div className='button-cont-comp'>
-                        <Link to="/">
-                            <Button className='butt'>Continuar comprando</Button>
+                        <Link to="/" style={{ textDecoration: 'none' ,border: 'none'}}>
+                            <Button style={{ textDecoration: 'none' ,border: 'none'}} className='butt'>Go back</Button>
                         </Link>
                     </div>
                 </div>
