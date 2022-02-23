@@ -10,9 +10,7 @@ const ItemFilter = ()=>{
             <Dropdown.Toggle className="filter-buttonn">Filter</Dropdown.Toggle>
             <Dropdown.Menu>
                 <li className='filter-item'><Link to= '/category/finance'  style={{ textDecoration: 'none' ,color: 'black'}}>finance</Link></li>
-                <li className='filter-item'><Link to= '/category/science' style={{ textDecoration: 'none',color: 'black' }}>science</Link></li>
-                <li className='filter-item'><Link to= '/category/programming' style={{ textDecoration: 'none',color: 'black' }}>programming</Link></li>
-                <li className='filter-item'><Link to= '/category/psichology' style={{ textDecoration: 'none',color: 'black' }}>psichology</Link></li>
+                <li className='filter-item'><Link to= '/category/financebasics' style={{ textDecoration: 'none',color: 'black' }}>finance basics</Link></li>
             </Dropdown.Menu>
         </Dropdown>
 

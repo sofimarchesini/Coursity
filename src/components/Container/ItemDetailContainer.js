@@ -31,20 +31,22 @@ import { getFirestore } from '../../firebase';
 
 const ItemDetailContainer = () => {
 
+    
     const {id} = useParams();
-    const [item, setItem] = useState();
+    const [item, setItem] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     
-    const db = getFirestore();
-    let productsCollection = db.collection("items");
-    const selectedProduct = productsCollection.doc(id);
+    useEffect(() => {
+        const db = getFirestore();
+        let productsCollection = db.collection("items");
+        const selectedProduct = productsCollection.doc(id);
 
-    selectedProduct
-        .get()
-        .then((response) => setItem({ ...response.data(), id: response.id }))
-        .catch(console.log("error"))
-        .finally(() => setIsLoading(false));
-    
+        selectedProduct
+            .get()
+            .then((response) => setItem({ ...response.data(), id: response.id }))
+            .catch((error) => console.log(error))
+            .finally(() => setIsLoading(false));
+    }, [id]);
 
     if (isLoading) return <p>Cargando...</p>;
 
