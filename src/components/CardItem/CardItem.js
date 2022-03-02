@@ -20,7 +20,7 @@ const CardItem = (props) =>{
                 </div>
                 <div className='row-2'>
                     <p className="name">{props.title}<br /></p>
-                    <p className="name-2">Online Finance Learning Academy<br /></p>
+                    <p className="name-2">Coursity<br /></p>
                 </div>
                 <div className='row-3'>
                 <p className="price">${props.price}</p>

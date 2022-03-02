@@ -1,7 +1,8 @@
 .woman-section {
     text-align: center;
     background-color: rgb(255, 255, 255);
-    height: 150vh;
+    height: 100%;
+    margin-bottom: 200px;
   }
   @media only screen and (max-width: 768px) {
     .woman-section {

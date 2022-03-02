@@ -8,8 +8,8 @@ function Footer(){
     <div className="container-fluid">
       <div className="row py-2">
         <div className="col-lg-3 brand-description">
-          <a className="footer-title-link" href="#"><h1>Online Finance Learning Academy</h1></a>
-          <p className="text-description">The best Page to learn about finance</p>
+          <a className="footer-title-link" href="#"><h1>Cursity</h1></a>
+          <p className="text-description">The best Page to learn</p>
           <ul className="footer-icons">
             <a href="https://www.instagram.com/fendi/" target="_blank"><i className="fab fa-instagram"></i></a>
             <a href="https://twitter.com/fendi?lang=es" target="_blank"><i className="fab fa-twitter"></i></a>
@@ -22,7 +22,7 @@ function Footer(){
       <div className="subfooter row">
         <div className="col-9">
           <p className="footer-text">
-            © ONLINEFINANCELEARNINGACADEMY
+            © Cursity
           </p>
         </div>
         <div className="country-text col-3">
