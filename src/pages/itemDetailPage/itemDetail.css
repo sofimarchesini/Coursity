@@ -21,7 +21,7 @@
 
 .name-item{
     padding-top: 70PX;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .img-detail{
@@ -35,18 +35,18 @@
 }
 
 .detail-text,.detail-text-title{
-    padding: 15px
+    padding: 10px
 }
 
 .detail-text{
     color: rgb(87, 83, 83);
-    font-size: 20px;
+    font-size: 13px;
 }
 
 .detail-text-title{
-    margin-top: 30px;
+    margin-top: 25px;
     color: rgb(47, 46, 46);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .sub-container-1{
@@ -80,12 +80,12 @@ body {
 
  
 .description{
-    margin-top: 30px;
+    margin-top: 20px;
     border: 1px solid rgb(179, 179, 179);
 }
 
 .sub-cont{
-    padding-left: 440px;
+    padding-left: 300px;
 }
 
 .button-cont-comp{
