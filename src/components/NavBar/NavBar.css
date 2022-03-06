@@ -44,7 +44,7 @@ header {
     color: rgb(7, 7, 7);
     font-size: 20px;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 10px;
   }
   header .cart-items {
     position: absolute;

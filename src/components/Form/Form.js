@@ -1,26 +1,36 @@
-
-
 import React from 'react';
 import './form.css';
-import emailjs from 'emailjs-com';
 import { useState } from "react";
-import { useRef } from 'react';
-
-
+import { useContext } from 'react';
+import { context } from '../context/cartContext' 
+import {getFirestore} from "../../firebase";
 
 const Formulario = () => {
-    const form = useRef();
+    const  {cart, clearCart , freshTotal} = useContext(context);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
 
-    const sendEmail = (e) =>  {
+    const handleSumbit = (e) =>  {
         e.preventDefault();
-        emailjs.sendForm('service_ghn0632','template_q1rwjuj',e.target,"user_tvLkLtnmjdGb13uGZSZw9").then(res=>console.log(res)).catch(err=>console.log(err));
+
+        if (!name || !email ) alert('Complete data');
+        else {
+            const newOrder = {
+                buyer: {name, email},
+                items: cart,
+                total: freshTotal()
+            }
+            const db = getFirestore();
+            let orders = db.collection("orders");
+            console.log(newOrder)
+            orders.add(newOrder).then((resolve)=>alert(`Su compra fue exitosa! ID de la compra: ${resolve.id}`));
+            clearCart();
+        }
     }
 
       return (
-        <form id="contact" action="" method="post" onSubmit={sendEmail}>
+        <form id="contact" action="" method="post" onSubmit={handleSumbit}>
             <fieldset>
                  <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus onChange={(e) => setName(e.target.value)}/>
             </fieldset>

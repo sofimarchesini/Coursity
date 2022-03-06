@@ -8,16 +8,16 @@
 }
 
 .about-text{
-    margin-top: 200px;
+    margin-top: 130px;
     font-size: 35px;
 }
 
 .cont-text{
     display: flex;
     justify-content: flex-end;
-    padding: 0 400px;
+    padding: 0 380px;
     margin-bottom: 200px;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .about-cont{
