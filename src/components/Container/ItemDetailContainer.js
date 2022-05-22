@@ -5,8 +5,9 @@ import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () =>{
 
-    const {id} = useParams()
-    const item = items.find(prod => prod.id === Number(id));
+    const {nameToNavigate} = useParams();
+    console.log(nameToNavigate)
+    const item = items.find(prod => prod.nameToNavigate ===nameToNavigate);
 
     return (
         <ItemDetail prod={item}/>

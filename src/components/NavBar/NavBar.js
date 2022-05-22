@@ -11,12 +11,12 @@ const NavBar = () => {
         <header>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-3 header-title ">
+              <div className="col-5 header-title ">
                 <Link to= '/'  style={{ textDecoration: 'none' ,color: 'black'}}>
                     <h1 className='header-title-link'>Online Finance Learning Academy</h1>
                 </Link>
                 </div>
-              <div  className="col-8">
+              <div  className="col-6">
                 <nav>
                   <ul>
                     <li><Link to= '/'>Home</Link></li>

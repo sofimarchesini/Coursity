@@ -1,12 +1,8 @@
-
-
 import React from 'react';
 import './form.css';
 import emailjs from 'emailjs-com';
 import { useState } from "react";
 import { useRef } from 'react';
-
-
 
 const Formulario = () => {
     const form = useRef();

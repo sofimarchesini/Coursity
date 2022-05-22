@@ -15,14 +15,10 @@
 
 }
 
-.button-inc{
-
+.button-inc,.button-dec{
+    padding: 10px;
 }
 
-.button-dec{
-
-}
-
-.button-add{
-
+.number-counter{
+    padding-top: 10px;
 }

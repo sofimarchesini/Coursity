@@ -1,8 +1,7 @@
 
 
 .fila-inicial-about{
-    height: 300px;
-    background-color: rgb(248, 249, 255);
+    height: 100px;
 }
 
 .img-about{
@@ -12,16 +11,16 @@
 }
 
 .about-text{
-    margin-top: 200px;
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 .cont-text{
     display: flex;
     justify-content: flex-end;
-    padding: 0 400px;
-    margin-bottom: 200px;
-    margin-top: 70px;
+    padding: 0 100px;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .about-cont{
@@ -29,7 +28,13 @@
 }
 
 .text{
-    font-size: 22px;
-    margin-top: 50px;
+    font-size: 18px;
+    margin-top:10px;
+}
 
+.cont-square{
+    margin: 50px 300px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(180, 180, 180) ;
+    margin-bottom: 200px;
 }

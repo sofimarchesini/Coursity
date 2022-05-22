@@ -11,9 +11,8 @@ import '../Cart/Cart.js';
 const CardItem = (props) =>{
     //const { addToCart} = useContext(context)
     const navigate = useNavigate();
-
     return (
-        <div className="card-item container" onClick={() => navigate(`/${props.id}`)}> 
+        <div className="card-item container" onClick={() => navigate(`/${props.nameToNavigate}`)}> 
             <div id={props.id} className='card-item-sun'>
                 <div className='row-1'>
                     <img className="woman-img" src={process.env.PUBLIC_URL+props.src} alt=""/>

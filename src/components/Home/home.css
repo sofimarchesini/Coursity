@@ -14,28 +14,28 @@
     align-items: none;
     justify-content: flex-start;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    margin-left: 80px;
+    margin-left: 54px;
 }
 
 .home-text{
-  font-size: 30px;
+  font-size: 22px;
   color: rgb(80, 79, 79);
   margin-top: 50px;
 }
 
 .text-principal{
-  font-size: 65px;
+  font-size: 45px;
   color: rgb(20, 20, 20);
   padding-top: 190px;
 
 }
 
 .img-home-cont{
-  width: 30%;
+  width: 29%;
 }
 .img-home{
   width: 130%;
-  margin-top: 220px;
+  margin-top: 180px;
   border-radius: 80%;
 
   }

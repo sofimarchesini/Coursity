@@ -21,11 +21,11 @@ function App() {
           <Routes path="/">
             <Route index element={<HomePage/>}/>
               <Route path="/category/:category" element={<ItemListContainer/>}/>
-              <Route path=':id' element={<ItemDetailContainer/>}/>
+              <Route path=":nameToNavigate" element={<ItemDetailContainer/>}/>
               <Route path="about"  element={<About/>}/>
               <Route path="contact"  element={<Contact/>}/>
               <Route path="/cart" element={<Cart/>}/>
-                <Route path="/cart/pago" element={<Compra/>}/>
+                <Route  path="/cart/pago/:id" element={<Compra/>}/>
           </Routes>
           <Footer/>
 

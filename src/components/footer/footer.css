@@ -20,9 +20,10 @@ footer {
     width: 100%;
     cursor: auto;
   }
+
   footer .brand-description .footer-title-link h1 {
     margin-top: 6px;
-    font-size: 30px;
+    font-size: 24px;
     color: #242323;
   }
   footer .brand-description .text-description {

@@ -23,19 +23,23 @@ const  Counter = (props) => {
   return (
     <div className="counter-cont">
       <div className="cont-buttons">
-        <button
-          onClick={() => prodDecr()}
-          className="button-inc btn btn-secondary btn-xl p-2"
-        >
-          -
-        </button>
-        <span>{counter}</span>
-        <button
-          onClick={() => prodIncr()}
-          className="button-dec btn btn-secondary btn-xl"
-        >
-          +
-        </button>
+      <div className="button-inc">
+          <button 
+            onClick={() => prodDecr()}
+            className=" btn btn-secondary btn-xl "
+          >
+            -
+          </button>
+        </div>
+        <span className="number-counter">{counter}</span>
+        <div className="button-dec">
+          <button
+            onClick={() => prodIncr()}
+            className="btn btn-btn btn-secondary btn-xl "
+          >
+            +
+          </button>
+          </div>
       </div>
       <div className="mt-3"><Link to= '/cart' style={{ textDecoration: 'none' }}><button  onClick={() => {props.onAdd(counter,props.prod)}} className= " button-add row" ><p className="carrito-title">Add to Cart</p></button><br/></Link></div>
 

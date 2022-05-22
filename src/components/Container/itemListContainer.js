@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import '../CardItem/CardItem.css';
 import CardItem from '../CardItem/CardItem.js';
 import items from '../CardItem/CardData.js';
-import ItemFilter from '../ItemFilter/itemFilter.js';
 import { useParams } from "react-router";
 //import {getFirestore} from "../firebase";
 
@@ -36,15 +35,11 @@ const ItemListContainer = ()=>{
 
   getProductsWithAsyncAwait();
 
-  if (category){
-     items = items.filter(item=>item.category === category)
-  }
 
   console.log(items);
   return(
       <div id="woman-initial-section" className="woman-section">
         <h3 className="section-text">Get ready to learn</h3>
-        <ItemFilter/>
         <div className="grid-container-woman">
           {(items).map((prod) => {
               return (
@@ -54,6 +49,7 @@ const ItemListContainer = ()=>{
                   title={prod.name} 
                   price={prod.price}
                   id={prod.id}
+                  nameToNavigate={prod.nameToNavigate}
                   />
               )
             }

@@ -7,6 +7,7 @@ import CartItem from './CartItem';
 import {NavLink} from 'react-router-dom'
 import {Link} from 'react-router-dom';
 import Counter from '../counter/counterCart';
+import Compra from '../../pages/formPage/formPage';
 
 
 
@@ -14,16 +15,17 @@ const cartDOM = document.querySelector(".cart");
 
 const Cart = () =>{
 
-    const { cart, clearCart, removeFromCart, addToCart, subTotal, freshTotal} = useContext(context)
+    const { cart, clearCart, sumQuantity, removeFromCart, addToCart, subTotal, freshTotal} = useContext(context)
 
     const onAdd = (counter,prod) => {
         prod.quantity = counter
         addToCart(prod)
     }
+    
 
     return (
         <>
-        {cart.lenght!=0 ?
+        {sumQuantity()>0 ?
         <>
         <div className="cart-overlay  container-fluid">
             <div className="cart">
@@ -41,7 +43,6 @@ const Cart = () =>{
                                 <div onClick={()=>removeFromCart(prod)}>
                                     <Button  className="remove-button">remove</Button>
                                 </div>
-                            
                         </div>
                     )
                 })}
@@ -51,20 +52,25 @@ const Cart = () =>{
                         <h3>your total : $<span className="cart-total">{freshTotal()}</span></h3>
                         <button onClick={() => clearCart()} className="clear-cart banner-btn">clear cart</button>
                     </div>
-                    <NavLink to="/" className="close-cart" style={{ textDecoration: 'none',color: 'black'}}>
+                    <div className="close-cart">
+                    <NavLink to="/"  style={{ textDecoration: 'none',color: 'black'}}>
                         <i className="icon-close" ><FontAwesomeIcon icon="fa-solid fa-rectangle-xmark"/>Go back</i>
                     </NavLink>
+                    </div>
                     <div className='button-pay-cont'>
-                        <Link to='/cart/pago' style={{ textDecoration: 'none',color: 'black'}}>
-                            <i className='button-pay'>Pay here</i>
-                        </Link>
+                        <div className='button-link'> <a style={{ textDecoration: 'none',color: 'black'}} className="button-link-a" target="_blank"  rel="noreferrer" href={cart[0].link}>Pay here</a> </div>
                     </div>
                 </div>
         </div>
-        </>:
+        </>
+        :
         <div>
-            <p>No hay nada en el carrito</p>
-
+            <p className='empty-cart'>No hay nada en el carrito</p>
+            <div  className="empty-cart-button">
+                <NavLink to="/" style={{ textDecoration: 'none',color: 'black'}}>
+                    <i  ><FontAwesomeIcon icon="fa-solid fa-rectangle-xmark"/>Go Shop</i>
+                </NavLink>
+                </div>
         </div>
             }
         </>
