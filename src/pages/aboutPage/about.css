@@ -1,8 +1,11 @@
 
 
+<<<<<<< HEAD
 .fila-inicial-about{
     height: 100px;
 }
+=======
+>>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
 
 .img-about{
     width: 80%;
@@ -11,16 +14,27 @@
 }
 
 .about-text{
+<<<<<<< HEAD
     font-size: 30px;
     margin-top: 30px;
+=======
+    margin-top: 130px;
+    font-size: 35px;
+>>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
 }
 
 .cont-text{
     display: flex;
     justify-content: flex-end;
+<<<<<<< HEAD
     padding: 0 100px;
     margin-bottom: 100px;
     margin-top: 50px;
+=======
+    padding: 0 380px;
+    margin-bottom: 200px;
+    margin-top: 20px;
+>>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
 }
 
 .about-cont{

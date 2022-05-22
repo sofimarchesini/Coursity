@@ -2,41 +2,51 @@
 import React, { useEffect, useState } from 'react';
 import '../CardItem/CardItem.css';
 import CardItem from '../CardItem/CardItem.js';
+<<<<<<< HEAD
 import items from '../CardItem/CardData.js';
+=======
+import ItemFilter from '../ItemFilter/itemFilter.js';
+>>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
 import { useParams } from "react-router";
-//import {getFirestore} from "../firebase";
+import {getFirestore} from "../../firebase";
 
 
 const ItemListContainer = ()=>{
 
-  //const db = getFirestore();
-  //const productsCollection = db.collection('items');
-
-  const [items2,setItems] = useState([]);
-  const {category} = useParams();
-
-  const getProducts = () => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => (resolve(items)), 2000);})
-    }
-
-    useEffect(() => {
-      getProducts().then((a)=>setItems(a))
-    },[]);
-
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState();
+  const { category } = useParams();
   
-  const getProductsWithAsyncAwait = async () => {
-     try {
-        const result = await getProducts();
-     } catch (error) {
-          console.error("Ha habido un error:", error);
+  useEffect(() => {
+      const db = getFirestore();
+      let prods;
+      if (category) {
+        prods = db
+          .collection("items")
+          .where("category", "==", category);
+      } else {
+        prods = db.collection("items");
+
       }
-    };
-
-  getProductsWithAsyncAwait();
 
 
-  console.log(items);
+<<<<<<< HEAD
+=======
+      const getDataFromFirestore = async () => {
+        setLoading(true);
+        try {
+          const response = await prods.get();
+          if (response.empty) console.log("No hay productos");
+          setItems(response.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+        }  finally {
+          setLoading(false);
+        }
+      };
+      getDataFromFirestore();
+
+    }, [category]);
+>>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
+
   return(
       <div id="woman-initial-section" className="woman-section">
         <h3 className="section-text">Get ready to learn</h3>

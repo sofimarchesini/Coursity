@@ -1,18 +1,17 @@
-import * as firebase from "firebase/app";
-import "firebase/firestore"
+import  firebase from 'firebase/app';
+import 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBaE-qPfFMf0HgjcU33qSWC84sGrK9NhX8",
-    authDomain: "onlinefinancelearning.firebaseapp.com",
-    projectId: "onlinefinancelearning",
-    storageBucket: "onlinefinancelearning.appspot.com",
-    messagingSenderId: "673671645622",
-    appId: "1:673671645622:web:76d791382faeb418469917",
-    measurementId: "G-TMNNZ6WP98"
-  };
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
+};
 
 const app = firebase.initializeApp(firebaseConfig);
 
 export const getFirebase = () => app;
 
-export const getFirestore = () =>  firebase.firestore(app);
+export const getFirestore = () => firebase.firestore(app);

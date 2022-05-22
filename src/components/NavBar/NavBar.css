@@ -42,9 +42,9 @@ header {
     align-items: flex-end;
     justify-content: flex-end;
     color: rgb(7, 7, 7);
-    padding: 20px;
-    font-size: 26px;
-    margin-right: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
   }
   header .cart-items {
     position: absolute;
@@ -62,7 +62,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 17px;
+    font-size: 13px;
     width: 100%;
     margin-top: 10px;
   }
