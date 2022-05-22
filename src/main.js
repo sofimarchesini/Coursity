@@ -64,20 +64,20 @@ function addAndShowCart(item) {
     div.id = `${item.id}-cart`;
     div.innerHTML = `<!-- cart item -->
             <!-- item image -->
-            <img className="image-item" src=${item.image} alt="product" />
+            <img class="image-item" src=${item.image} alt="product" />
             <!-- item info -->
-            <div className="info-item">
-              <h4 className="name-item">${item.name}</h4>
-              <h5 className="price-item">${item.price}</h5>
-              <span className="remove-item" id="${item.id}-remove">
-                <i className="far fa-trash-alt"></i>
+            <div class="info-item">
+              <h4 class="name-item">${item.name}</h4>
+              <h5 class="price-item">${item.price}</h5>
+              <span class="remove-item" id="${item.id}-remove">
+                <i class="far fa-trash-alt"></i>
               </span>
             </div>
             <!-- item functionality -->
             <div>
-                <i className="fas fa-chevron-up cart-up" id="${item.id}-up"></i>
-              <p className="item-amount">1</p>
-                <i className="fas fa-chevron-down cart-down" id="${item.id}-down"></i>
+                <i class="fas fa-chevron-up cart-up" id="${item.id}-up"></i>
+              <p class="item-amount">1</p>
+                <i class="fas fa-chevron-down cart-down" id="${item.id}-down"></i>
             </div>
           <!-- cart item -->
     `;
@@ -169,10 +169,10 @@ function generateCard(prod){
 
     div.innerHTML =`<!--  card --> 
                 <div id="prod-${prod.id}">
-                <img className="woman-img" src=${prod.image} alt="Double-breasted jacket in a straight cut featuring a V neck"/>
-                <button className= "mt-4 button-add" id="${prod.id}"><p className="carrito-title">Añadir a Carrito</p></button><br/>
-                <p><strong className="name">${prod.name}</strong><br />Double-breasted jacket in a straight cut featuring a V neck<br/>
-                    <strong>$<span className="price">${prod.price}</span></strong></p>
+                <img class="woman-img" src=${prod.image} alt="Double-breasted jacket in a straight cut featuring a V neck"/>
+                <button class= "mt-4 button-add" id="${prod.id}"><p class="carrito-title">Añadir a Carrito</p></button><br/>
+                <p><strong class="name">${prod.name}</strong><br />Double-breasted jacket in a straight cut featuring a V neck<br/>
+                    <strong>$<span class="price">${prod.price}</span></strong></p>
                 </div>
             <!-- card -->`
 

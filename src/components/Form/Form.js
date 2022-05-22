@@ -1,40 +1,22 @@
 import React from 'react';
 import './form.css';
+import emailjs from 'emailjs-com';
 import { useState } from "react";
-<<<<<<< HEAD
 import { useRef } from 'react';
-=======
-import { useContext } from 'react';
-import { context } from '../context/cartContext' 
-import {getFirestore} from "../../firebase";
->>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
 
 const Formulario = () => {
-    const  {cart, clearCart , freshTotal} = useContext(context);
+    const form = useRef();
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
 
-    const handleSumbit = (e) =>  {
+    const sendEmail = (e) =>  {
         e.preventDefault();
-
-        if (!name || !email ) alert('Complete data');
-        else {
-            const newOrder = {
-                buyer: {name, email},
-                items: cart,
-                total: freshTotal()
-            }
-            const db = getFirestore();
-            let orders = db.collection("orders");
-            console.log(newOrder)
-            orders.add(newOrder).then((resolve)=>alert(`Su compra fue exitosa! ID de la compra: ${resolve.id}`));
-            clearCart();
-        }
+        emailjs.sendForm('service_ghn0632','template_q1rwjuj',e.target,"user_tvLkLtnmjdGb13uGZSZw9").then(res=>console.log(res)).catch(err=>console.log(err));
     }
 
       return (
-        <form id="contact" action="" method="post" onSubmit={handleSumbit}>
+        <form id="contact" action="" method="post" onSubmit={sendEmail}>
             <fieldset>
                  <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus onChange={(e) => setName(e.target.value)}/>
             </fieldset>

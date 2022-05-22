@@ -13,7 +13,7 @@ const NavBar = () => {
             <div className="row">
               <div className="col-5 header-title ">
                 <Link to= '/'  style={{ textDecoration: 'none' ,color: 'black'}}>
-                    <h1 className='header-title-link'>Coursity</h1>
+                    <h1 className='header-title-link'>Online Finance Learning Academy</h1>
                 </Link>
                 </div>
               <div  className="col-6">
@@ -24,7 +24,7 @@ const NavBar = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="col-1">
+              <div  className="col-1">
                 <CartWidget/>
               </div>
             </div>

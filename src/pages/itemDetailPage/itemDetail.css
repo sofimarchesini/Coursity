@@ -36,20 +36,16 @@
 }
 
 .detail-text,.detail-text-title{
-    padding: 10px
+    padding: 15px
 }
 
 .detail-text{
     color: rgb(87, 83, 83);
-<<<<<<< HEAD
     font-size: 15px;
-=======
-    font-size: 13px;
->>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
 }
 
 .detail-text-title{
-    margin-top: 25px;
+    margin-top: 30px;
     color: rgb(47, 46, 46);
     font-size: 25px;
 }
@@ -90,11 +86,7 @@ body {
 }
 
 .sub-cont{
-<<<<<<< HEAD
     padding-left: 400px;
-=======
-    padding-left: 300px;
->>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
 }
 
 .button-cont-comp{

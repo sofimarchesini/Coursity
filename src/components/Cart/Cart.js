@@ -10,6 +10,9 @@ import Counter from '../counter/counterCart';
 import Compra from '../../pages/formPage/formPage';
 
 
+
+const cartDOM = document.querySelector(".cart");
+
 const Cart = () =>{
 
     const { cart, clearCart, sumQuantity, removeFromCart, addToCart, subTotal, freshTotal} = useContext(context)
@@ -55,13 +58,7 @@ const Cart = () =>{
                     </NavLink>
                     </div>
                     <div className='button-pay-cont'>
-<<<<<<< HEAD
                         <div className='button-link'> <a style={{ textDecoration: 'none',color: 'black'}} className="button-link-a" target="_blank"  rel="noreferrer" href={cart[0].link}>Pay here</a> </div>
-=======
-                        <Link to={`/cart/pago/${cart[0].id}`} style={{ textDecoration: 'none',color: 'black'}}>
-                            <i className='button-pay'>Pay here</i>
-                        </Link>
->>>>>>> 2bd25f1a4335c265e2946e97a79e8cf131e48e3e
                     </div>
                 </div>
         </div>
